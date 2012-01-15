@@ -1,16 +1,16 @@
 {
-  "name": "js-validate",
-  "version": "0.0.1",
-  "description":  "JavaScript Validation Library",
-  "author":       "Andrew Hanna",
+    "name": "js-validate",
+    "version": "0.0.1",
+    "description":  "JavaScript Validation Library",
+    "author":       "Andrew Hanna",
 
-  "directories": {
-    "lib": []
-  },
+    "directories": {
+        "lib": []
+    },
 
-  "bpm:build": {
-    "bpm_libs.js": {
-      "files": []
+    "bpm:build": {
+        "bpm_libs.js": {
+            "files": []
+        }
     }
-  }
 }
