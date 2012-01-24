@@ -1,12 +1,4 @@
-var jsValidate = require('../lib/main.js');
-
-beforeEach(function() {
-    this.addMatchers({
-        toBeOfType: function(expected) {
-            return this.actual.constructor === expected;
-        }
-    });
-});
+var jsValidate = jsValidate || require('../lib/main.js');
 
 // simplify passing functions for catching exceptions
 Function.prototype.wrap = function() {
@@ -18,6 +10,14 @@ Function.prototype.wrap = function() {
 };
 
 describe('validate', function() {
+    beforeEach(function() {
+        this.addMatchers({
+            toBeOfType: function(expected) {
+                return this.actual.constructor === expected;
+            }
+        });
+    });
+
     // validate string values
     it('validates string values', function() {
         expect(jsValidate.validate('a', 'String')).toBeTruthy();
