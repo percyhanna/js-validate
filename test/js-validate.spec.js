@@ -13,7 +13,7 @@ describe('validate', function() {
     beforeEach(function() {
         this.addMatchers({
             toBeOfType: function(expected) {
-                return this.actual.constructor === expected;
+                return this.actual instanceof expected;
             }
         });
     });
